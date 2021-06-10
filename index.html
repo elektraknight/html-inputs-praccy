@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <title>praccy: input forms</title>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+    <main>
+        
+        <form>
+            <fieldset>
+                <legend>build email form</legend>
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="enter full name here"
+                        />
+                    </div>
+                <div>
+                    <label for="postalcode">Zipcode:</label>
+                    <input
+                        id="location"
+                        type="text"
+                        name="zipcode"
+                        autofocus="on"
+                        maxlength="5"
+                        required
+                        />
+                    </div>
+                </fieldset>
+            <div>
+                <label for="form-msg">Your Inquiry:</label>
+                <textarea
+                    id="form-msg"
+                    name="msg"
+                    autofocus="on"
+                    required
+                    maxlength="200"
+                    placeholder="How can we help you"
+                    ></textarea>
+                </div>
+            
+        <button type="submit">Submit</button>
+        <button type="reset">Clear fields</button>
+        
+        </form>
+        
+    </main>
+    </body>
+</html>
